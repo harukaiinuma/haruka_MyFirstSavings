@@ -1,0 +1,12 @@
+version: "3"
+services:
+  next:
+    build:
+      context: ./myfirstsavings
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./myfirstsavings:/app
+      - /app/node_modules
+    command: npm run dev
