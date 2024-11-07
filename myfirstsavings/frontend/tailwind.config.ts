@@ -9,11 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main: "#F4E4C3",        // メインカラー（背景色など）
+        accent: "#F59D06",      // サブカラー（オレンジ系）
+        calmGreen: "#31A768",   // サブカラー（緑系）
+        vibrantRed: "#DB5B2A",  // サブカラー（赤系）
+        softPink: "#F88BAD",    // サブカラー（ピンク系）
       },
     },
   },
   plugins: [],
 };
+
 export default config;
+
